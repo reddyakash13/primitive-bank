@@ -54,3 +54,8 @@ curl -X POST "http://localhost:8080/v1/xyzbank/customer/1/account/1/deposit" -H 
 ```
 curl -X POST "http://localhost:8080/v1/xyzbank/customer/1/account/1/withdraw" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"currency\": \"EUR\", \"value\": 50}"
 ```
+
+## TODO's
+* Current implementation does not allow creation of new users or accounts. API's can be tested only through test data.
+* More tests needs to be written to cover negative scenarios
+* Implement complete HATEOAS to navigate from customer to account to account histories
